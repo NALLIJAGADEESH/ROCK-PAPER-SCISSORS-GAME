@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congratulations!</title>
+  <style>
+     body{
+            width: 100%;
+            max-height: fit-content;
+           
+            background-color: rgba(140, 196, 97, 1);
+        }
+        .congrats{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        .hurray{
+            position: relative;
+            left: 4.5rem;
+            
+
+        }
+        .vector{ 
+            left: -18rem;
+            position: relative;
+        }
+        .h1{
+            color: rgba(255, 255, 255, 1);
+            position: relative;
+            left: 0;
+            font-family: Roboto;
+            font-size: 91px;
+            font-weight: 600;
+            line-height: 107px;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+        .p{
+            color: rgba(255, 255, 255, 1);
+
+            margin: -35px;
+            padding-top: 0;
+            font-family: Roboto;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 48px;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+        .play{
+            font-weight: bold;
+            background-color: #eee;
+            letter-spacing: 2px;
+            color: rgba(107, 107, 107, 1);
+            outline: none;
+            cursor: pointer;
+            padding: 15px 20px;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            margin: 3.5rem 16rem;
+        }
+        .btn-div{
+            position: fixed;
+            margin: 39rem 0 0 85rem;
+           
+            
+            
+        }
+        .btn-rule{
+            padding: 8px 30px;
+            border: 2px solid white;
+            outline:none;
+            border-radius: 5px;
+            background-color: transparent;
+            font-size: 16px;
+            letter-spacing: 3px ;
+            color: white;
+            cursor: pointer;
+
+        }
+    
+  </style>
+</head>
+<body>
+    <div class="btn-div">
+        <button class="btn-rule">RULE</button>
+    </div>
+
+    <div class="congrats">
+        <div>
+            <img class="hurray" src="public/hurray.png" alt="">
+            <img class="vector" src="public/Vector (2).png" alt="">
+            <h1 class="h1">HURRAY!!</h1>
+            <p class="p">YOU WON THE GAME</p>
+            <button onclick="playAgain()" class="play">Play Again</button>
+        </div>
+    </div>
+
+
+
+  <script>
+    function playAgain() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
